@@ -1,6 +1,8 @@
 import Greeting from "../components/greeting";
 import React from "react";
 import { Link } from "gatsby";
+import { Container } from "react-bootstrap";
+import Layout from "../components/Layout";
 
 const Hello = () => {
     let infos = [
@@ -21,15 +23,16 @@ const Hello = () => {
         }
     ]
     return (
-        <>
-            <title>Hello</title>
-            {infos.map(info => {
-                return (
-                    <Greeting name={info.name} age={info.age}/>
-                )
-            })}
-            <Link to="/">Home</Link>
-        </>
+        <Container>
+            <Layout>
+                <title>Hello</title>
+                {infos.map(info => {
+                    return (
+                        <Greeting name={info.name} age={info.age}/>
+                    )
+                })}
+            </Layout>
+        </Container>
     )
 }
 
