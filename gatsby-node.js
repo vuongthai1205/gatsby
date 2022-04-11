@@ -43,17 +43,19 @@ exports.createPages = ({ graphql, actions }) => {
   });
 };
 
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-  if (stage === "build-html" || stage === "develop-html") {
+exports.onCreateWebpackConfig = function onCreateWebpackConfig({ actions, stage, loaders }) {
+  if (stage === 'develop') {
     actions.setWebpackConfig({
       module: {
         rules: [
           {
-            test: /node_modules/,
-            use: loaders.null(),
-          },
-        ],
-      },
+            test: /react-hot-loader/,
+            use: [
+              loaders.js()
+            ]
+          }
+        ]
+      }
     })
   }
 }
