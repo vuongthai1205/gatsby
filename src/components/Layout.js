@@ -8,28 +8,23 @@ import { Container } from "react-bootstrap";
 const Layout = (props) => {
     const {children} = props;
     return (
-        <Container>
-
-            <StaticQuery
-                query={graphql`
-                query {
-                    site {
-                        siteMetadata {
-                        title
-                        }
-                    }
+        <StaticQuery
+          query={graphql`
+            query {
+              site {
+                siteMetadata {
+                  title
                 }
-            `}
-            render={(data) => (
-                <div className="app">
-                    <Header title={data.site.siteMetadata.title}/>
-                    {children}
-                    <Footer/>
-                </div>
-            )}
-            />
-        </Container>
-        
+              }
+            }
+          `}
+          render={(data) => (
+            <div className="app">
+            <Header title={data.site.siteMetadata.title}/>
+            {children}
+            <Footer/>
+        </div>)}
+        />
     )
 }
 

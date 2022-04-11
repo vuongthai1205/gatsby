@@ -15,6 +15,7 @@ import { graphql } from "gatsby";
 
 // markup
 const IndexPage = ({data}) => {
+  console.log(data)
   return (
     <Container>
       <title >Home Page</title>

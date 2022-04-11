@@ -9,15 +9,8 @@ const Header = ({title}) => {
         color: white;
         text-decoration: none
     `;
-    const NavbarLink = styled(Navbar)`
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 99;
-    `;
     return (
-        <NavbarLink collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
                 <Navbar.Brand><StyledLink to="/">{title}</StyledLink></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -41,7 +34,7 @@ const Header = ({title}) => {
                     </Nav>
                 </Navbar.Collapse>
             </Container>
-        </NavbarLink>
+        </Navbar>
     )
 }
 
