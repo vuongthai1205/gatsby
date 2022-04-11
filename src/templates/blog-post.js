@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
-import { Col, Container, Row } from "react-bootstrap";
+import {Container, Row } from "react-bootstrap";
 
 const BlogPost = ({ data }) => {
     const post = data.markdownRemark;

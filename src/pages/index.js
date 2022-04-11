@@ -1,12 +1,9 @@
 import * as React from "react"
-import Footer from "../components/Footer"
-import Header from "../components/Header"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Slider from "../components/Slider";
 import AcordionC from "../components/AcordionC";
 import FormC from "../components/FormC";
-import { Container, Form } from "react-bootstrap";
-import TabC from "../components/TabC";
+import { Container} from "react-bootstrap";
 import CardsC from "../components/CardsC";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
@@ -52,7 +49,6 @@ export const query = graphql`
     }
   }
 `;
-
 
 
 export default IndexPage
