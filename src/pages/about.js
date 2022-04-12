@@ -1,4 +1,4 @@
-import { Link } from "gatsby";
+
 import React from "react";
 import { Container } from "react-bootstrap";
 import Layout from "../components/Layout";

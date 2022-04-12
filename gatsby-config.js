@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/content/assets/`,
   siteMetadata: {
     title: `Gatsby Blog`,
     author: `Vuong Thai`,
@@ -24,7 +25,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     `gatsby-plugin-sharp`,

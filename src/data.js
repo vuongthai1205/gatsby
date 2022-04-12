@@ -1,7 +1,8 @@
+
 const people = [
   {
     id: 1,
-    image: "./static/advert-2.png",
+    image: "./assets/images/advert-2.png",
     name: "Haryy Stamper",
     title: "manager",
     quote:
@@ -9,7 +10,7 @@ const people = [
   },
   {
     id: 2,
-    image: "./static/advert-2.png",
+    image: "./assets/images/advert-2.png",
     name: "James Gun",
     title: "Project Manager",
     quote:
@@ -17,7 +18,7 @@ const people = [
   },
   {
     id: 3,
-    image: "./static/advert-2.png",
+    image: "./assets/images/advert-2.png",
     name: "Michael Mosely",
     title: "Product Manager",
     quote:
@@ -25,7 +26,7 @@ const people = [
   },
   {
     id: 4,
-    image: "./static/advert-2.png",
+    image: "./assets/images/advert-2.png",
     name: "James Van",
     title: "Vice President",
     quote:
