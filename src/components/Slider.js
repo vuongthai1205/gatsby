@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Slider.css";
 import data from "../data";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Slider = () => {
   const [people] = useState(data);
@@ -33,6 +34,7 @@ const Slider = () => {
       <div className="section-center">
         {people.map((item, indexPeople) => {
           const { id, image, name, title, quote } = item;
+          console.log(typeof image)
           let position = "nextSlide";
           if (indexPeople === index) {
             position = "activeSlide";
@@ -45,7 +47,7 @@ const Slider = () => {
           }
           return (
             <article className={position} key={id}>
-              <img src={image} alt={name} className="person-img" />
+              <StaticImage src="../images/advert-2.png" className="person-img"/>
               <h4>{name}</h4>
               <p className="title">{title}</p>
               <p className="text">{quote}</p>
