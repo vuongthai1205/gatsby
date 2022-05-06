@@ -1,7 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
-import {Container, Row } from "react-bootstrap";
+import {Col, Container, Row } from "react-bootstrap";
+import Sidebar from "../components/sidebar";
 
 const BlogPost = ({ data }) => {
     const post = data.markdownRemark;
@@ -9,9 +10,14 @@ const BlogPost = ({ data }) => {
         <Container>
             <Layout>
               <Row>
-                <title>{post.frontmatter.title}</title>
-                <h1>{post.frontmatter.title}</h1>
-                <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                <Col sm={9}>
+                  <title>{post.frontmatter.title}</title>
+                  <h1>{post.frontmatter.title}</h1>
+                  <div style={{textAlign: "justify"}} dangerouslySetInnerHTML={{ __html: post.html }} />
+                </Col>
+                <Col sm={3}>
+                  <Sidebar/>
+                </Col>
               </Row>
             </Layout>
         </Container>

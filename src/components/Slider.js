@@ -1,10 +1,47 @@
 import React, { useState, useEffect } from "react";
 import "./Slider.css";
-import data from "../data";
-import { StaticImage } from "gatsby-plugin-image";
+import  Icon from "../images/icon.png"
+import  Advert2 from "../images/advert.png"
+
 
 const Slider = () => {
-  const [people] = useState(data);
+  
+  let peopleC = [
+    {
+      id: 1,
+      image: Icon,
+      name: "Haryy Stamper",
+      title: "manager",
+      quote:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+    },
+    {
+      id: 2,
+      image: Advert2,
+      name: "James Gun",
+      title: "Project Manager",
+      quote:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+    },
+    {
+      id: 3,
+      image: Advert2,
+      name: "Michael Mosely",
+      title: "Product Manager",
+      quote:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    },
+    {
+      id: 4,
+      image: Icon,
+      name: "James Van",
+      title: "Vice President",
+      quote:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    },
+  ];
+
+  const [people] = useState(peopleC);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -34,7 +71,7 @@ const Slider = () => {
       <div className="section-center">
         {people.map((item, indexPeople) => {
           const { id, image, name, title, quote } = item;
-          console.log(typeof image)
+          console.log(image)
           let position = "nextSlide";
           if (indexPeople === index) {
             position = "activeSlide";
@@ -47,7 +84,7 @@ const Slider = () => {
           }
           return (
             <article className={position} key={id}>
-              <StaticImage src="../images/advert-2.png" className="person-img"/>
+              <img src={image} alt={name} className="person-img" />
               <h4>{name}</h4>
               <p className="title">{title}</p>
               <p className="text">{quote}</p>
