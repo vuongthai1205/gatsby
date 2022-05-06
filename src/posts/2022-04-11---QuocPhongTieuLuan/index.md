@@ -3,6 +3,7 @@ title: Tiểu luận quốc phòng
 date: "2022-04-11T22:40:32.169Z"
 categories: ["quocphong"]
 tags: ["tieuluan"]
+ava: "./salty_egg.jpg"
 ---
 
 **BỘ GIÁO DỤC VÀ ĐÀO TẠO**

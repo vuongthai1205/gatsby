@@ -3,6 +3,7 @@ title: Blog Mới của Vương
 date: "2015-05-28T22:40:32.169Z"
 categories: ["cat1"]
 tags: ["greeting"]
+ava: "./salty_egg.jpg"
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia and

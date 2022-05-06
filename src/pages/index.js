@@ -39,6 +39,9 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD/MM/YYYY")
+            ava {
+              publicURL
+            }
           }
           excerpt
           fields {

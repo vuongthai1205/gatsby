@@ -71,7 +71,6 @@ const Slider = () => {
       <div className="section-center">
         {people.map((item, indexPeople) => {
           const { id, image, name, title, quote } = item;
-          console.log(image)
           let position = "nextSlide";
           if (indexPeople === index) {
             position = "activeSlide";
