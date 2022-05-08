@@ -1,23 +1,16 @@
-
-import { Link } from "gatsby";
 import React from "react";
-import styled from "styled-components";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 const Header = ({title}) => {
-    const StyledLink = styled(Link)`
-        color: white;
-        text-decoration: none
-    `;
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand><StyledLink to="/">{title}</StyledLink></Navbar.Brand>
+                <Navbar.Brand href="/">{title}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                    <Nav.Link><StyledLink to="/hello">Hello</StyledLink></Nav.Link>
-                    <Nav.Link><StyledLink to="/about">About</StyledLink></Nav.Link>
+                    <Nav.Link href="/hello">Hello</Nav.Link>
+                    <Nav.Link href="/about">About</Nav.Link>
                     <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>

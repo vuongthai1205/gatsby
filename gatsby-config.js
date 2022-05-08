@@ -7,6 +7,7 @@ module.exports = {
     siteUrl: `https://gatsby-vuong.netlify.app/`,
   },
    plugins: [
+    `gatsby-plugin-fontawesome-css`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

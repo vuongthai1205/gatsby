@@ -4,6 +4,7 @@ import  Icon from "../images/icon.png"
 import  Advert2 from "../images/advert.png"
 
 
+
 const Slider = () => {
   
   let peopleC = [
@@ -94,7 +95,7 @@ const Slider = () => {
           <span>&lsaquo;</span>
         </button>
         <button className="next" onClick={() => setIndex(index + 1)}>
-          <span>&rsaquo;</span>
+          {/* <FontAwesomeIcon icon="fa-brands fa-accusoft" /> */}
         </button>
       </div>
     </section>
