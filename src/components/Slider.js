@@ -11,34 +11,34 @@ const Slider = () => {
     {
       id: 1,
       image: Icon,
-      name: "Haryy Stamper",
-      title: "manager",
+      name: "Luật Thái Gia",
+      title: "UY TÍN",
       quote:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+        "Luật Thái Gia chỉ nhận và thực hiện dịch vụ pháp lý cho Khách Hàng một khi đã tìm hiểu kỹ và trong khả năng của mình, đảm bảo cung cấp dịch vụ tốt nhất cho Khách Hàng. ",
     },
     {
       id: 2,
       image: Advert2,
-      name: "James Gun",
-      title: "Project Manager",
+      name: "Luật Thái Gia",
+      title: "CHUYÊN NGHIỆP",
       quote:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+        "Với đội ngũ nhân sự được tổ chức theo từng chuyên ngành, chúng tôi đã và đang hiện thực hóa mục tiêu 'Luật sư của doanh nghiệp, luật sư riêng của gia đình và luật sư riêng của cá nhân'",
     },
     {
       id: 3,
       image: Advert2,
-      name: "Michael Mosely",
-      title: "Product Manager",
+      name: "Luật Thái Gia",
+      title: "TRÁCH NHIỆM",
       quote:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "Khách Hàng sử dụng dịch vụ của Luật Thái Gia sẽ thật sự an tâm để phát triển cộng việc của mình, toàn bộ các vấn đề pháp lý, sự an toàn pháp lý là trách nhiệm của luật sư chúng tôi.",
     },
     {
       id: 4,
       image: Icon,
-      name: "James Van",
-      title: "Vice President",
+      name: "Luật Thái Gia",
+      title: "HỖ TRỢ 24/24",
       quote:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "Khách Hàng không phải mất thời gian để tìm hiểu những rắc rối của thủ tục hay các tranh chấp về pháp lý, chỉ cần liên hệ với Khánh An Phát để được tư vấn chính xác, vì đó là công việc của chúng tôi.",
     },
   ];
 
@@ -67,7 +67,7 @@ const Slider = () => {
   return (
     <section className="section">
       <div className="title">
-        <h2>top idol</h2>
+        <h2>Tại sao chọn Luật Thái Gia</h2>
       </div>
       <div className="section-center">
         {people.map((item, indexPeople) => {
@@ -91,12 +91,6 @@ const Slider = () => {
             </article>
           );
         })}
-        <button className="prev" onClick={() => setIndex(index - 1)}>
-          <span>&lsaquo;</span>
-        </button>
-        <button className="next" onClick={() => setIndex(index + 1)}>
-          {/* <FontAwesomeIcon icon="fa-brands fa-accusoft" /> */}
-        </button>
       </div>
     </section>
   );

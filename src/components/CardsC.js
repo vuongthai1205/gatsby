@@ -16,7 +16,7 @@ const CardsC = ({data}) => {
                                 {node.excerpt}
                             </Card.Text>
                             <Button variant="primary">{node.frontmatter.date}</Button>
-                            <Button variant="primary"><Link style={{textDecoration: "none", fontSize: 20}} to={node.fields.slug}>{node.frontmatter.title}</Link></Button>
+                            {/* <Button variant="primary"><Link style={{textDecoration: "none", fontSize: 20}} to={node.fields.slug}>{node.frontmatter.title}</Link></Button> */}
                         </Card.Body>
                     </Card>
                 </Col>

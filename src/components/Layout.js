@@ -2,6 +2,9 @@ import React from "react";
 import Header from "./Header";
 import {StaticQuery, graphql } from "gatsby";
 import Footer from "./Footer";
+import Sidebar from "./sidebar";
+import { Container} from "react-bootstrap";
+
 
 
 const Layout = (props) => {
@@ -15,14 +18,31 @@ const Layout = (props) => {
                   title
                 }
               }
+              topics: allMarkdownRemark(
+                sort: { order: DESC, fields: [frontmatter___date] }
+              ) {
+                edges {
+                  node {
+                    frontmatter {
+                      categories
+                      tags
+                    }
+                  }
+                }
+              }
             }
           `}
           render={(data) => (
-            <div className="app" style={{paddingTop: 56}}>
-            <Header title={data.site.siteMetadata.title}/>
-            {children}
-            <Footer/>
-        </div>)}
+            <Container>
+              
+              <div className="app" style={{paddingTop: 56}}>
+                  <Header title={data.site.siteMetadata.title}/>
+                  <div className="content">{children}</div>
+                  <Sidebar edges={data.topics.edges}/>
+                  <Footer/>
+              </div>
+            </Container>
+            )}
         />
     )
 }

@@ -1,6 +1,9 @@
 import Button from 'react-bootstrap/Button'
 import React, { useState } from "react";
 import Form from 'react-bootstrap/Form'
+import { Col, Row } from 'react-bootstrap';
+import Alert from 'react-bootstrap/Alert'
+import ListGroup from 'react-bootstrap/ListGroup'
 
 const FormC = () => {
     const [name, setName] = useState("");
@@ -66,81 +69,82 @@ const FormC = () => {
     }
 
     return (
-        <section className="form-container" id="form1">
             <div className="form grid wide">
-                <div className="row">
-                <form action="" method="post" className="col l-8 c-12 m-12">
-                    <div className="form__item">
-                        <Form.Control
-                            type="text"
-                            name="name"
-                            required id="form__name"
-                            placeholder="Họ và tên..."
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                        />
-                        <span className="form__required"></span>
-                    </div>
-                    <div className="form__item">
-                        <Form.Control
-                            type="email"
-                            name="email"
-                            required
-                            placeholder="Email của bạn..."
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                        />
-                        <span className="form__required"></span>
-                    </div>
-                    <div className="form__item">
-                        <Form.Control 
-                            type="tel"
-                            name="number"
-                            required
-                            placeholder="Số điện thoại..."
-                            value={tel}
-                            onChange={(e) => setTel(e.target.value)}
-                        />
-                        <span className="form__required"></span>
-                    </div>
-                    <div className="form__item">
-                        <Form.Control
-                            type="tel"
-                            name="tittle"
-                            required
-                            placeholder="Tiêu đề..."
-                            value={tittle}
-                            onChange={(e) => setTittle(e.target.value)}
-                        />
-                        <span className="form__required"></span>
-                    </div>
-                    <div className="form__item">
-                        <Form.Control
-                            type="text"
-                            name="description"
-                            required
-                            placeholder="Mô tả vấn đề của bạn..."
-                            value={description}
-                            onChange={(e) => setDescription(e.target.value)}
-                        />
-                        <span className="form__required"></span>
-                    </div>
-                    <div className="form__notify"></div>
-                    <Button id="form__submit" onClick={handleSubmit} variant="outline-danger">Gửi</Button>
-                    
-                </form>
-                    <div className="col l-4 c-12 m-12">
-                        <div className="info-form">
-                            <h2>Thông tin liên hệ</h2>
-                            <span><i className="fa-solid fa-location-crosshairs"></i>602/51e Điện Biên Phủ, P.22, Q.Bình Thạnh</span>
-                            <span><i className="fa-solid fa-mobile-screen-button"></i>0933 943 686</span>
-                            <span><i className="fa-solid fa-envelope"></i>xuansuonglawyer@gmail.com</span>
-                            <span><i className="fa-brands fa-facebook"></i>fb.com/luatthaigia</span>
-                        </div>
-                    </div>
-                </div>
+                <Row>
+                    <Col lg="8" md="5">
+                        <form action="" method="post" className="col l-8 c-12 m-12">
+                            <div className="form__item">
+                                <Form.Control
+                                    type="text"
+                                    name="name"
+                                    required id="form__name"
+                                    placeholder="Họ và tên..."
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
+                                />
+                                <span className="form__required"></span>
+                            </div>
+                            <div className="form__item">
+                                <Form.Control
+                                    type="email"
+                                    name="email"
+                                    required
+                                    placeholder="Email của bạn..."
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                />
+                                <span className="form__required"></span>
+                            </div>
+                            <div className="form__item">
+                                <Form.Control 
+                                    type="tel"
+                                    name="number"
+                                    required
+                                    placeholder="Số điện thoại..."
+                                    value={tel}
+                                    onChange={(e) => setTel(e.target.value)}
+                                />
+                                <span className="form__required"></span>
+                            </div>
+                            <div className="form__item">
+                                <Form.Control
+                                    type="tel"
+                                    name="tittle"
+                                    required
+                                    placeholder="Tiêu đề..."
+                                    value={tittle}
+                                    onChange={(e) => setTittle(e.target.value)}
+                                />
+                                <span className="form__required"></span>
+                            </div>
+                            <div className="form__item">
+                                <Form.Control
+                                    type="text"
+                                    name="description"
+                                    required
+                                    placeholder="Mô tả vấn đề của bạn..."
+                                    value={description}
+                                    onChange={(e) => setDescription(e.target.value)}
+                                />
+                                <span className="form__required"></span>
+                            </div>
+                            <div className="form__notify"></div>
+                            <Button id="form__submit" onClick={handleSubmit} variant="outline-danger">Gửi</Button>
+                        </form>
+                    </Col>
+                    <Col lg="4" md="5">
+                        <Alert variant="danger">
+                            <Alert.Heading>Thông tin liên hệ</Alert.Heading>
+                            <ListGroup>
+                                <ListGroup.Item variant="primary">602/51e Điện Biên Phủ, P.22, Q.Bình Thạnh</ListGroup.Item>
+                                <ListGroup.Item variant="success">0933 943 686</ListGroup.Item>
+                                <ListGroup.Item variant="warning">xuansuonglawyer@gmail.com</ListGroup.Item>
+                                <ListGroup.Item variant="info">fb.com/luatthaigia</ListGroup.Item>
+                            </ListGroup>
+                        </Alert>
+                    </Col>
+                </Row>
             </div>
-        </section>
     )
 }
 

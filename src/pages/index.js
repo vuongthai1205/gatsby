@@ -16,7 +16,7 @@ const IndexPage = ({data}) => {
   console.log(data)
   return (
     <Container>
-      <title >Home Page</title>
+      <title >Luật Thái Gia</title>
       <Layout>
         <CarouselsC/>
         <Slider/>
