@@ -1,8 +1,8 @@
 import React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import { graphql, Link } from "gatsby";
 
-export default ({ data, pageContext }) => {
+const Tags = ({ data, pageContext }) => {
   const { tag } = pageContext;
   const tagEdges = data.allMarkdownRemark.edges.filter(({ node }) =>
     node.frontmatter.tags.includes(tag)
@@ -47,3 +47,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default Tags
