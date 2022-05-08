@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: `/content/assets/`,
   siteMetadata: {
-    title: `Gatsby Blog`,
+    title: `Luật Thái Gia`,
     author: `Vuong Thai`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-vuong.netlify.app/`,

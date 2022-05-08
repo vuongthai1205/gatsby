@@ -1,0 +1,84 @@
+.load-page{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: var(--main-color);
+    z-index: 100;
+    display: flex;
+    align-items: baseline;
+    line-height: 99vh;
+    justify-content: center;
+    animation: opcityPage 1.5s ease-in-out;
+    /* display: none; */
+}
+.load-page__text{
+    margin-right: 24px;
+    font-size: 50px;
+}
+.load-page__text:nth-child(1)
+{
+    font-size: 25px;
+    animation: moveTextX 0.9s ease-out;
+}
+
+.load-page__text:nth-child(2){
+    animation: moveTextY 0.9s ease-in-out;
+}
+
+.load-page__text:nth-child(3){
+    animation: moveTextX1 0.9s ease-out;
+}
+
+@keyframes moveTextX{
+    0%{
+        transform: translateX(-300px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes moveTextX1{
+    0%{
+        transform: translateX(300px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes moveTextY{
+    0%{
+        transform: translateY(-300px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes opcityPage{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}

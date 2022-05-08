@@ -4,9 +4,10 @@ import Slider from "../components/Slider";
 import AcordionC from "../components/AcordionC";
 import FormC from "../components/FormC";
 import { Container} from "react-bootstrap";
-import CardsC from "../components/CardsC";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
+import CarouselsC from "../components/CarouselsC";
+// import '../assets/css';
 
 
 
@@ -17,8 +18,8 @@ const IndexPage = ({data}) => {
     <Container>
       <title >Home Page</title>
       <Layout>
+        <CarouselsC/>
         <Slider/>
-        <CardsC data={data}/>
         <FormC/>
         <AcordionC/>
       </Layout>

@@ -7,15 +7,16 @@ const CardsC = ({data}) => {
     return (
         <Row>
             {data.allMarkdownRemark.edges.map(({ node }, index) => (
-                <Col sm={12} md={3} lg={3} key={index} style={{marginBottom: '12px'}}>
+                <Col sm={12} md={3} lg={3} key={index} style={{marginBottom: '24px'}}>
                     <Card style={{overflow: "hidden"}}>
-                        <img variant="top" src={node.frontmatter.ava.publicURL} alt="" width={200} height={300}/>
+                        <img variant="top" src={node.frontmatter.ava.publicURL} alt="" style={{objectFit: "contain", height: 300, padding: 16}}/>
                         <Card.Body>
-                            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+                            <Link style={{textDecoration: "none", fontSize: 20}} to={node.fields.slug}>{node.frontmatter.title}</Link>
                             <Card.Text style={{ height: '110px' }}>
                                 {node.excerpt}
                             </Card.Text>
                             <Button variant="primary">{node.frontmatter.date}</Button>
+                            <Button variant="primary"><Link style={{textDecoration: "none", fontSize: 20}} to={node.fields.slug}>{node.frontmatter.title}</Link></Button>
                         </Card.Body>
                     </Card>
                 </Col>

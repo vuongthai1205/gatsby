@@ -18,7 +18,7 @@ const Layout = (props) => {
             }
           `}
           render={(data) => (
-            <div className="app">
+            <div className="app" style={{paddingTop: 56}}>
             <Header title={data.site.siteMetadata.title}/>
             {children}
             <Footer/>

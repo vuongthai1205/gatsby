@@ -1,0 +1,32 @@
+@media (max-width: 480px)
+{
+    .hide-on-mobile{
+        display: none;
+    }
+    .appear-on-mobile{
+        display: block;
+    }
+    .form form{
+        display: unset;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .hide-on-tablet{
+        display: none;
+    }
+    .appear-on-tablet{
+        display: block;
+    }
+    .form form{
+        display: unset;
+    }
+    .form form button{
+        position: absolute;
+        top: 85%;
+        right: 5px;
+        width: 79px;
+        height: 79px;
+    }
+}
