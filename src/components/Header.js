@@ -27,14 +27,14 @@ const Header = ({title}) => {
                         <Nav.Link><Link style={linkNav} to="/hello">Bài Viết</Link></Nav.Link>
                         <Nav.Link><Link style={linkNav} to="/about">About</Link></Nav.Link>
                         
-                        <NavDropdown style={linkNav} title="Luật tố tụng" id="collasible-nav-dropdown">
+                        <NavDropdown title="Luật tố tụng" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                         </NavDropdown>
-                        <NavDropdown style={linkNav} title="Dropdown" id="collasible-nav-dropdown">
+                        <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>

@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/content/assets/`,
+  pathPrefix: `/gatsby`,
   siteMetadata: {
     title: `Luật Thái Gia`,
     author: `Vuong Thai`,

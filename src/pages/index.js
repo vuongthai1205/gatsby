@@ -6,7 +6,7 @@ import FormC from "../components/FormC";
 import { Container} from "react-bootstrap";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
-import CarouselsC from "../components/CarouselsC";
+// import CarouselsC from "../components/CarouselsC";
 // import '../assets/css';
 
 
@@ -18,7 +18,7 @@ const IndexPage = ({data}) => {
     <Container>
       <title >Luật Thái Gia</title>
       <Layout>
-        <CarouselsC/>
+        {/* <CarouselsC/> */}
         <Slider/>
         <FormC/>
         <AcordionC/>
