@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_new=self.webpackChunkgatsby_new||[]).push([[682],{5465:function(e,t,n){n.r(t);var l=n(1597),u=n(7294);t.default=function(){return u.createElement(u.Fragment,null,u.createElement("title",null,"About"),u.createElement("h1",null,"Thái Gia Vương"),u.createElement("p",null,"Thái Gia Vương 20 tuổi đang bị chú đầu trọc săn đuổi"),u.createElement(l.rU,{to:"/"},"Home"))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-a4f0527d0a2975119080.js.map
