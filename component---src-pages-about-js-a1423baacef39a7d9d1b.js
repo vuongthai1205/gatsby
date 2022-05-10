@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_new=self.webpackChunkgatsby_new||[]).push([[682],{5465:function(e,n,t){t.r(n);var l=t(7294),u=t(3639),a=t(26);n.default=function(){return l.createElement(u.Z,null,l.createElement(a.Z,null,l.createElement("title",null,"About"),l.createElement("h1",null,"Thái Thị Xuân Sương"),l.createElement("p",null,"Thái Thị Xuân Sương là luật sư số 1")))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-a1423baacef39a7d9d1b.js.map
