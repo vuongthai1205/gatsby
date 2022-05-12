@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Slider.css";
-import  Icon from "../images/icon.png"
-import  Advert2 from "../images/advert.png"
+import  Advert from "../images/advert.png"
+import  Advert1 from "../images/advert1.png"
+import  Advert2 from "../images/advert2.png"
+import  Advert3 from "../images/advert3.png"
 
 
 
@@ -10,7 +12,7 @@ const Slider = () => {
   let peopleC = [
     {
       id: 1,
-      image: Icon,
+      image: Advert,
       name: "Luật Thái Gia",
       title: "UY TÍN",
       quote:
@@ -18,7 +20,7 @@ const Slider = () => {
     },
     {
       id: 2,
-      image: Advert2,
+      image: Advert1,
       name: "Luật Thái Gia",
       title: "CHUYÊN NGHIỆP",
       quote:
@@ -34,7 +36,7 @@ const Slider = () => {
     },
     {
       id: 4,
-      image: Icon,
+      image: Advert3,
       name: "Luật Thái Gia",
       title: "HỖ TRỢ 24/24",
       quote:
