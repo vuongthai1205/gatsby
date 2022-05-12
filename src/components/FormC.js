@@ -4,6 +4,8 @@ import Form from 'react-bootstrap/Form'
 import { Col, Row } from 'react-bootstrap';
 import Alert from 'react-bootstrap/Alert'
 import ListGroup from 'react-bootstrap/ListGroup'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationArrow, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const FormC = () => {
     const [name, setName] = useState("");
@@ -136,10 +138,10 @@ const FormC = () => {
                         <Alert variant="danger">
                             <Alert.Heading>Thông tin liên hệ</Alert.Heading>
                             <ListGroup>
-                                <ListGroup.Item variant="primary">602/51e Điện Biên Phủ, P.22, Q.Bình Thạnh</ListGroup.Item>
-                                <ListGroup.Item variant="success">0933 943 686</ListGroup.Item>
-                                <ListGroup.Item variant="warning">xuansuonglawyer@gmail.com</ListGroup.Item>
-                                <ListGroup.Item variant="info">fb.com/luatthaigia</ListGroup.Item>
+                                <ListGroup.Item variant="primary"><FontAwesomeIcon icon={faLocationArrow} style={{paddingRight: 4}} />602/51e Điện Biên Phủ, P.22, Q.Bình Thạnh</ListGroup.Item>
+                                <ListGroup.Item variant="success"><FontAwesomeIcon icon={faPhone} style={{paddingRight: 4}} />0933 943 686</ListGroup.Item>
+                                <ListGroup.Item variant="warning"><FontAwesomeIcon icon={faEnvelope} style={{paddingRight: 4}} />xuansuonglawyer@gmail.com</ListGroup.Item>
+                                <ListGroup.Item variant="info"><FontAwesomeIcon icon={faLocationArrow} style={{paddingRight: 4}} />fb.com/luatthaigia</ListGroup.Item>
                             </ListGroup>
                         </Alert>
                     </Col>

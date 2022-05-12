@@ -8,8 +8,8 @@ const About = () => {
     <Container>
         <Layout>
             <title>About</title>
-            <h1>Thái Gia Vương</h1>
-            <p>Thái Gia Vương 20 tuổi đang bị chú đầu trọc săn đuổi</p>
+            <h1>Thái Thị Xuân Sương</h1>
+            <p>Thái Thị Xuân Sương là luật sư số 1</p>
         </Layout>
     </Container>
     )

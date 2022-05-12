@@ -2,7 +2,7 @@ import React from "react";
 import slug from "slug";
 import { Link } from "gatsby";
 
-export default (props) => {
+const SideBar =  (props) => {
   const { edges } = props;
   let tags = [];
   let categories = [];
@@ -38,3 +38,5 @@ export default (props) => {
     </aside>
   );
 };
+
+export default SideBar

@@ -36,7 +36,7 @@ const Layout = (props) => {
             <Container>
               
               <div className="app" style={{paddingTop: 56}}>
-                  <Header title={data.site.siteMetadata.title}/>
+                  <Header title={data.site.siteMetadata.title} edges={data.topics.edges}/>
                   <div className="content">{children}</div>
                   <Sidebar edges={data.topics.edges}/>
                   <Footer/>

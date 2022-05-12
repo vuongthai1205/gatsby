@@ -1,13 +1,10 @@
 ---
 title: Tiểu luận quốc phòng
 date: "2022-04-11T22:40:32.169Z"
-categories: ["quocphong"]
+categories: ["Quốc phòng"]
 tags: ["tieuluan"]
 ava: "./salty_egg.jpg"
 ---
-
-
-
 
 **TRƯỜNG ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH**
 
@@ -27,7 +24,6 @@ Tiểu đội: 41 Nhóm: 10
 
 Lớp: DH20CS02
 
-
 Giáo viên hướng dẫn: Nguyễn Quang Quảng
 
 Thành phố Hồ Chí Minh, 2021 – 2022
@@ -37,8 +33,6 @@ Thành phố Hồ Chí Minh, 2021 – 2022
 [I.\*\* **PHÂN TÍCH KHÁI NIỆM, VỊ TRÍ, VAI TRÒ VÀ CÁC QUAN ĐIỂM, NGUYÊN TẮC XÂY DỰNG LỰC LƯỢNG DỰ BỊ ĐỘNG VIÊN?** 3](#_Toc93261973)
 
 [**1.** **Khái niệm** 3](#_Toc93261974)
-
-
 
 [**3.** **Quan điểm nguyên tắc xây dựng lực lượng dự bị động viên** 4](#_Toc93261976)
 
